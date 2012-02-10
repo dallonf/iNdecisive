@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) id detailItem;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *decisionLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *decisionLabel2;
+
+@property (retain) NSMutableArray *optionList;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+-(NSString *)loopedOption:(NSInteger)index;
 
 @end

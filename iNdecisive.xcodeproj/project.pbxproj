@@ -19,21 +19,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11107F9A148D57B000B875AD /* iNdecsisive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNdecsisive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11107F9A148D57B000B875AD /* iNdecisive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNdecisive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11107F9E148D57B000B875AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11107FA0148D57B000B875AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11107FA2148D57B000B875AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		11107FA6148D57B000B875AD /* iNdecsisive-Info.plist */ = {isa = PBXFileReference; path = "iNdecsisive-Info.plist"; sourceTree = "<group>"; };
+		11107FA6148D57B000B875AD /* iNdecisive-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iNdecisive-Info.plist"; sourceTree = "<group>"; };
 		11107FA8148D57B000B875AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11107FAA148D57B000B875AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		11107FAC148D57B000B875AD /* iNdecsisive-Prefix.pch */ = {isa = PBXFileReference; path = "iNdecsisive-Prefix.pch"; sourceTree = "<group>"; };
-		11107FAD148D57B000B875AD /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		11107FAC148D57B000B875AD /* iNdecisive-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iNdecisive-Prefix.pch"; sourceTree = "<group>"; };
+		11107FAD148D57B000B875AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11107FAE148D57B000B875AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		11107FB1148D57B000B875AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		11107FB3148D57B000B875AD /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		11107FB3148D57B000B875AD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		11107FB4148D57B000B875AD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		11107FB6148D57B000B875AD /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		11107FB6148D57B000B875AD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		11107FB7148D57B000B875AD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		11107FC2148D59B300B875AD /* iNdecisive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iNdecisive.entitlements; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +54,7 @@
 		11107F8F148D57AF00B875AD = {
 			isa = PBXGroup;
 			children = (
-				11107FA4148D57B000B875AD /* iNdecsisive */,
+				11107FA4148D57B000B875AD /* iNdecisive */,
 				11107F9D148D57B000B875AD /* Frameworks */,
 				11107F9B148D57B000B875AD /* Products */,
 			);
@@ -62,7 +63,7 @@
 		11107F9B148D57B000B875AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11107F9A148D57B000B875AD /* iNdecsisive.app */,
+				11107F9A148D57B000B875AD /* iNdecisive.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,9 +78,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11107FA4148D57B000B875AD /* iNdecsisive */ = {
+		11107FA4148D57B000B875AD /* iNdecisive */ = {
 			isa = PBXGroup;
 			children = (
+				11107FC2148D59B300B875AD /* iNdecisive.entitlements */,
 				11107FAD148D57B000B875AD /* AppDelegate.h */,
 				11107FAE148D57B000B875AD /* AppDelegate.m */,
 				11107FB0148D57B000B875AD /* MainStoryboard.storyboard */,
@@ -89,16 +91,17 @@
 				11107FB7148D57B000B875AD /* DetailViewController.m */,
 				11107FA5148D57B000B875AD /* Supporting Files */,
 			);
+			name = iNdecisive;
 			path = iNdecsisive;
 			sourceTree = "<group>";
 		};
 		11107FA5148D57B000B875AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				11107FA6148D57B000B875AD /* iNdecsisive-Info.plist */,
+				11107FA6148D57B000B875AD /* iNdecisive-Info.plist */,
 				11107FA7148D57B000B875AD /* InfoPlist.strings */,
 				11107FAA148D57B000B875AD /* main.m */,
-				11107FAC148D57B000B875AD /* iNdecsisive-Prefix.pch */,
+				11107FAC148D57B000B875AD /* iNdecisive-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -106,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11107F99148D57B000B875AD /* iNdecsisive */ = {
+		11107F99148D57B000B875AD /* iNdecisive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11107FBB148D57B000B875AD /* Build configuration list for PBXNativeTarget "iNdecsisive" */;
+			buildConfigurationList = 11107FBB148D57B000B875AD /* Build configuration list for PBXNativeTarget "iNdecisive" */;
 			buildPhases = (
 				11107F96148D57B000B875AD /* Sources */,
 				11107F97148D57B000B875AD /* Frameworks */,
@@ -118,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = iNdecsisive;
+			name = iNdecisive;
 			productName = iNdecsisive;
-			productReference = 11107F9A148D57B000B875AD /* iNdecsisive.app */;
+			productReference = 11107F9A148D57B000B875AD /* iNdecisive.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +134,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 11107F94148D57B000B875AD /* Build configuration list for PBXProject "iNdecsisive" */;
+			buildConfigurationList = 11107F94148D57B000B875AD /* Build configuration list for PBXProject "iNdecisive" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -143,7 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11107F99148D57B000B875AD /* iNdecsisive */,
+				11107F99148D57B000B875AD /* iNdecisive */,
 			);
 		};
 /* End PBXProject section */
@@ -243,9 +246,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iNdecsisive/iNdecsisive-Prefix.pch";
-				INFOPLIST_FILE = "iNdecsisive/iNdecsisive-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "iNdecsisive/iNdecisive-Prefix.pch";
+				INFOPLIST_FILE = "iNdecsisive/iNdecisive-Info.plist";
+				PRODUCT_NAME = iNdecisive;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,9 +257,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iNdecsisive/iNdecsisive-Prefix.pch";
-				INFOPLIST_FILE = "iNdecsisive/iNdecsisive-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "iNdecsisive/iNdecisive-Prefix.pch";
+				INFOPLIST_FILE = "iNdecsisive/iNdecisive-Info.plist";
+				PRODUCT_NAME = iNdecisive;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -264,7 +267,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11107F94148D57B000B875AD /* Build configuration list for PBXProject "iNdecsisive" */ = {
+		11107F94148D57B000B875AD /* Build configuration list for PBXProject "iNdecisive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11107FB9148D57B000B875AD /* Debug */,
@@ -273,13 +276,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11107FBB148D57B000B875AD /* Build configuration list for PBXNativeTarget "iNdecsisive" */ = {
+		11107FBB148D57B000B875AD /* Build configuration list for PBXNativeTarget "iNdecisive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11107FBC148D57B000B875AD /* Debug */,
 				11107FBD148D57B000B875AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

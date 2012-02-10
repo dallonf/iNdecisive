@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <UIAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *decideButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
+@property (retain) NSMutableArray *optionList;
+- (IBAction)addItem:(id)sender;
+- (IBAction)toggleEditMode:(id)sender;
+
+- (void)openDialog:(NSInteger)editId;
+- (void)syncDecideButton;
+
 
 @end

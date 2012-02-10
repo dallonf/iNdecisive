@@ -12,10 +12,13 @@
 - (void)configureView;
 @end
 
-@implementation DetailViewController
+@implementation DetailViewController;
 
 @synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize decisionLabel1 = _decisionLabel1;
+@synthesize decisionLabel2 = _decisionLabel2;
+@synthesize optionList;
+@synthesize tableView = _tableView;
 
 #pragma mark - Managing the detail item
 
@@ -32,10 +35,8 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
+    //[self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:(NSIntegerMax / 4) inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,6 +56,9 @@
 
 - (void)viewDidUnload
 {
+    [self setDecisionLabel1:nil];
+    [self setDecisionLabel2:nil];
+    [self setTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -84,6 +88,36 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+#pragma mark Data
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return NSIntegerMax / 4;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OptionSwipeCell"];
+    cell.textLabel.text = @"Foo";//[self loopedOption:indexPath.row];
+    
+    return cell;
+}
+
+#pragma mark Events
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.tableView setHidden:FALSE];
+}
+
+
+#pragma mark Functions
+
+-(NSString *)loopedOption:(NSInteger)index {
+    int id = index % self.optionList.count;
+    
+    return [self.optionList objectAtIndex:id];
 }
 
 @end
